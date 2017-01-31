@@ -1,7 +1,9 @@
-package ChainOfResponsability;
+package testes;
 
 import java.util.Scanner;
 
+import ChainOfResponsability.CalculadorDeDescontos;
+import ChainOfResponsability.Item;
 import strategy.Orcamento;
 
 public class TesteDeDescontos {
