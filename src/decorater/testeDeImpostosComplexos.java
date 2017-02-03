@@ -2,6 +2,7 @@ package decorater;
 
 import java.util.Scanner;
 
+import strategy.ICMS;
 import strategy.ISS;
 import strategy.Imposto;
 import strategy.Orcamento;
