@@ -1,5 +1,7 @@
 package builder;
 
+import java.sql.Date;
+
 public class TesteDaNotaFiscal {
 
 	public static void main(String[] args) {
@@ -12,7 +14,7 @@ public class TesteDaNotaFiscal {
 		.comItem(new ItemDaNota("x3", 300.0))
 		.comItem(new ItemDaNota("x4", 400.0))
 		.comObservacoes("xxxxxxxxxx,xxx,xxxx")
-		.naDataAtual();
+		.naDataAtual(null);
 		
 		NotaFiscal nf = builder.constroi();
 		

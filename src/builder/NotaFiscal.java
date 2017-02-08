@@ -1,6 +1,7 @@
 package builder;
 
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 public class NotaFiscal {
@@ -13,12 +14,12 @@ public class NotaFiscal {
 	public List<ItemDaNota> itens;
 	public String observacoes;
 
-	public NotaFiscal(String razaoScial, String cnpj, Calendar dataDeEmissao, double voalorBruto, double impostos,
+	public NotaFiscal(String razaoScial, String cnpj, Calendar data, double voalorBruto, double impostos,
 			List<ItemDaNota> itens, String observacoes) {
 		super();
 		this.razaoScial = razaoScial;
 		this.cnpj = cnpj;
-		this.dataDeEmissao = dataDeEmissao;
+		this.dataDeEmissao = data;
 		this.valorBruto = voalorBruto;
 		this.impostos = impostos;
 		this.itens = itens;

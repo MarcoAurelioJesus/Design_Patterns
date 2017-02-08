@@ -2,7 +2,10 @@ package builder;
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
+
+import org.xml.sax.helpers.ParserAdapter;
 
 import observer.EnviadorDeEmail;
 import observer.EnviadorDeImpressao;
@@ -47,7 +50,7 @@ public class NotaFiscalBuilder extends EnviadorDeEmail {
 		
 	}
 	
-	public NotaFiscalBuilder naDataAtual() {
+	public NotaFiscalBuilder naDataAtual(Calendar data) {
 		this.data = data;
 		
 		return this;
